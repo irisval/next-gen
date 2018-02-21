@@ -3,7 +3,7 @@ title: 'About Next Gen'
 about_text: "Next Gen Creators is a nonprofit organization started in 2015 to help provide a platform from aspiring and existing developers in the Caribbean to showcase their skills and create solutions to the world’s biggest problems.  \r\n<br>\r\n<br>\r\nThe organization eventually evolved to help young entrepreneurs and techies across the Caribbean and Latin America to innovate, collaborate and learn through a series of specially curated events and programs.  \r\n<br>\r\n<br>\r\nNext Gen Creators is the organizer of Coders Of The Caribbean, Converge Summit and pitch partners for the Diamond Challenge in Jamaica."
 how_work_subtext: 'Our results are guaranteed - here are our methodologies for success:\'
 quality1: Entrepreneurship
-quality1_icon: flash_on
+quality1_icon: accessibility
 quality1_description: 'Considering the limitations that exists in the Caribbean’s start-up ecosystem our organization serves as a ‘feeder’ of entrepreneurial and tech talent into the space.'
 quality2: Immersion
 quality2_icon: group

@@ -43,15 +43,26 @@ form:
                 .position:
                   type: text
                   label: Person's Position
-                .facebook:
-                  type: text
-                  label: Facebook Link
-                .twitter:
-                  type: text
-                  label: Twitter Link
-                .linkedin:
-                  type: text
-                  label: LinkedIn Link
+                # .facebook:
+                #   type: text
+                #   label: Facebook Link
+                # .twitter:
+                #   type: text
+                #   label: Twitter Link
+                # .linkedin:
+                #   type: text
+                #   label: LinkedIn Link
+                .icons:
+                  type: list
+                  style: vertical
+                  label: Add Icon
+                  fields:
+                    .link: 
+                      type: text
+                      label: Icon Link
+                    .symbol: 
+                      type: text
+                      label: Icon Symbol
                 .bio:
                   type: text
                   label: Bio

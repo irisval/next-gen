@@ -28,45 +28,22 @@
 {% endblock head %}
 </head>
 <body>
-
-<div class="nav z-depth-1">
-  <a href="{{ base_url }}"><img class="logo" src="{{ url('theme://images/logo.png') }}"></a>
-  {% include 'partials/navigation.html.twig' %} 
-</div>
-  
-   
+    <div class="nav z-depth-1">
+      <a href="{{ base_url }}"><img class="logo" src="{{ url('theme://images/logo.png') }}"></a>
+      {% include 'partials/navigation.html.twig' %} 
+    </div> 
     <main>
-  {% block content %}
-  {% endblock %}
-    </main>
-    <!-- <img class="responsive-tri" src="{{ url('theme://images/triangles.png') }}"> -->
-    <footer class="page-footer"> 
-        <div class="row">
-            <div class="col s6">
-                <a href="{{ base_url }}"><img class="logo-footer" src="{{ url('theme://images/logo.png') }}"></a>
-                <div class="footer-details">
-                    <p class="top-align-p white-text"><i class="footer-left-icon fa fa-envelope"></i>{{ page.find('/home').header.contact_email }}</p>
-                    <p class="top-align-p white-text"><i class="footer-left-icon fa fa-phone"></i>{{ page.find('/home').header.contact_number }}</p>
-                </div>
-            </div>
-            <div class="col s6 right-align">
-                 <p>Made with <i id="madeby-icon" class="fa"></i> by <a id="elixir-labs" href="http://www.elixirlabs.org/" target="_blank">Elixir Labs</a></p>
-            </div>
-        </div>
-      </footer>
-
-
-
-
- {% block javascripts %}
+    {% block content %}
+    {% endblock %}
+    </main>   
+    {% include 'partials/footer.html.twig' %}
+    {% block javascripts %}
         {% do assets.addJs('https://code.jquery.com/jquery-3.2.1.min.js', 100) %}
         {% do assets.addJs('theme://js/materialize.js', 99) %}
         {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js', 98) %}
         {% do assets.addJs('theme://js/scripts.js', 97) %}
         {% do assets.addJs('https://maps.googleapis.com/maps/api/js?key=YOURAPIKEY&callback=initMap', 89) %}
- 
     {% endblock %}
     {{ assets.js() }}
-
   </body>
 </html>

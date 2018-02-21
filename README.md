@@ -10,3 +10,9 @@
 * Obtain the */Accounts*, */Config*, */Data* files and put them inside */User/Accounts*, */User/Config*, */User/Data*
 * Turn on xampp/mamp
 * Navigate to http://localhost/next-gen
+
+## Updating Changes
+* Set up cPanel
+* Open the File Manager (may be under the subdomains folder)
+* Make sure you're in the nextgencreators.org folder
+* Upload/delete/modify the necessary files

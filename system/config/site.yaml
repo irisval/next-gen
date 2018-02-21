@@ -8,8 +8,9 @@ author:
 taxonomies: [category,tag]                  # Arbitrary list of taxonomy types
 
 metadata:
-  description: 'My Grav Site'               # Site description
-
+  description: 'The Next Generation Inspired.'
+  'og:site_name': 'Next Gen Creators'
+  'og:url': 'nextgencreators.org'
 summary:
   enabled: true                             # enable or disable summary of page
   format: short                             # long = summary delimiter will be ignored; short = use the first occurrence of delimiter or size

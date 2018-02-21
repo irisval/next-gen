@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
-
+/*$footer-bg: #292e38;*/
 html, body {
   width: 100%;
   background-color: #3a414f;
@@ -92,56 +92,6 @@ main {
 .subtext {
   padding-top: 2em; }
 
-/*.what-we-do-cards {
-  @include clearfix;
-  border-top: 10px solid rgba(255, 255, 255, .46);
-  background-color: white;
-  background: url('/img/front/strategy.jpg') no-repeat center center;
-  background-attachment: fixed;
-  background-size: cover;
-  color: $white;
-  padding-bottom: 4em;
-}
-.what-we-do-cards {
-  @include clearfix;
-  border-top: 10px solid rgba(255, 255, 255, .46);
-  color: $white;
-  padding-bottom: 4em;
-  overflow: hidden; // added for pseudo-element
-  position: relative; // added for pseudo-element
-
-  // Fixed-position background image
-  &::before {
-    content: ' ';
-    position: fixed; // instead of background-attachment
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: white;
-    background: url('/img/front/strategy.jpg') no-repeat center center;
-    background-size: cover;
-    will-change: transform; // creates a new paint layer
-    z-index: -1;
-  }
-}*/
-/*.hero {
-
-  overflow: hidden;
-  position: relative;
-  &::before {
-    content: ' ';
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: url('../../images/hero.jpg') no-repeat center center;
-    background-size: cover;
-    will-change: transform;
-    z-index: -10;
-  }
-}*/
 .hero {
   height: 100%;
   width: 100%;
@@ -193,20 +143,6 @@ main {
   font-size: 2rem;
   transform: translate(-50%, -50%); }
 
-/*
-.mid h2 {
-  font-weight: 400;
-  color: white;
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 2rem;
-    transform: translate(-50%, -50%);
-    top: 50%;
-  left: 50%;
-  display: inline-block;
-  position: absolute;
-
-}*/
 .rarrow {
   color: #8BDA48;
   font-size: 40px !important;
@@ -929,7 +865,13 @@ input:not([type]):focus:not([readonly]) + label, input[type]:not(.browser-defaul
   padding-right: 5px; }
 
 .page-footer {
-  background-color: #2e343f !important; }
+  background-color: #2e343f !important;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem; }
+
+.footer-social {
+  color: white;
+  padding-right: 0.5rem; }
 
 #elixir-labs {
   color: #cbd8e5;
