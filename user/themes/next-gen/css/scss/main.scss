@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600');
-
-
 $top-bg: rgb(46,52,63);
 $center-bg: rgb(58,65,79);
-/*$footer-bg: #292e38;*/
 $blue-border: #2ad6fa;
 $green: #8BDA48;
 $lato: 'Lato';
@@ -124,7 +119,7 @@ main {
 }
 
 .hero {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: #3a414f;
   position: relative;
@@ -146,7 +141,7 @@ main {
 }
 
 #hero-sub {
-  padding-top: 22.5vh;
+  padding-top: 9.5%;
   font-weight: 400;
 }
 .hero .cont {

@@ -14,12 +14,13 @@
     <link rel="apple-touch-icon" href="{{ url('theme://images/favicon.ico') }}"/>
     <link rel="canonical" href="{{ page.url(
     true, true) }}" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Source+Sans+Pro:300,400,600" rel="stylesheet">
 
     {% block stylesheets %}
         {% do assets.addCss('https://fonts.googleapis.com/icon?family=Material+Icons') %}
         {% do assets.addCss('theme://css/css/normalize.css') %}
         {% do assets.addCss('theme://css/css/materialize.css') %}
-        {% do assets.addCss('theme://css/css/main.css') %}
+        {% do assets.addCss('theme://css/css/main.min.css') %}
         {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') %}
     {% endblock %}
     {{ assets.css() }}
