@@ -2,4 +2,4 @@
 title: Programs
 ---
 
-The key to more success is to get a massage once a week, very important, major key, cloth talk. The key to more success is to have a lot of pillows.
+Here at Next Gen Creators, we endevour to transform the tech and startup ecosystem in the Caribbean region. Come join us on our journey!  

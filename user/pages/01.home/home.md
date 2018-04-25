@@ -2,7 +2,7 @@
 slogan: 'Inspiring the Next Generation'
 slogan_subtext: 'Helping Youth in the Caribbean explore their passions as techies and entrepreneurs.'
 get_involved:
-    subtext: copywritingcopywritingcopywritingcopywriting
+    subtext: 'Come And Be A Part Of The Digital Revolution'
 circle1_caption: 'Volunteer With Us!'
 circle1_hover_text: 'Want to Volunteer?'
 circle1_hover_link: /
@@ -13,16 +13,16 @@ circle3_caption: 'See our Events'
 circle3_hover_text: 'Come to an Event!'
 circle3_hover_link: /
 join_community:
-    subtext: copywritingcopywritingcopywritingcopywriting
-join_community_caption: 'You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Eliptical talk. Fan luv. Find peace, life is like a water fall, you’ve gotta flow.'
+    subtext: 'Love Tech And Not Sure Where To Go? Come And Join Us!'
+join_community_caption: 'In our community you will find a myriad of youth personalities: experienced coders, tech-entrepreneurs, tech enthusiasts.'
 programs:
-    subtext: copywritingcopywritingcopywritingcopywriting
+    subtext: 'Here are a few of our initiatives aimed at helping Techies in the Caribbean'
 contact_us:
-    subtext: copywritingcopywritingcopywritingcopywriting
+    subtext: 'Have a burning question? Reach Out to Us! '
 contact_email: info@nextgencreators.com
 contact_number: 876-451-3421
 sponsors_donors:
-    subtext: copywritingcopywritingcopywritingcopywriting
+    subtext: 'Here are a few of our biggest supporters'
 circle1_img:
     user/themes/next-gen/images/home/home_involved1.JPG:
         name: home_involved1.JPG
@@ -47,17 +47,6 @@ join_community_img:
         type: image/jpeg
         size: 7667609
         path: user/themes/next-gen/images/home/home_join.JPG
-custom_file:
-    user/pages/01.home/twilio_logo.png:
-        name: twilio_logo.png
-        type: image/png
-        size: 16191
-        path: user/pages/01.home/twilio_logo.png
-    user/pages/01.home/dribble_logo.png:
-        name: dribble_logo.png
-        type: image/png
-        size: 4897
-        path: user/pages/01.home/dribble_logo.png
 title: Home
 join-community-caption: 'aYou see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Eliptical talk. Fan luv. Find peace, life is like a water fall, you’ve gotta flow.'
 contact-email: ainfo@nextgencreators.com
@@ -129,6 +118,12 @@ form:
                 body: '{% include ''forms/data.txt.twig'' %}'
         -
             message: 'Thank you for getting in touch!'
+custom_file:
+    'user/pages/01.home/ncb logo.png':
+        name: 'ncb logo.png'
+        type: image/png
+        size: 25665
+        path: 'user/pages/01.home/ncb logo.png'
 ---
 
 yesasdf

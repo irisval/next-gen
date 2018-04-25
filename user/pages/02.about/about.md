@@ -1,33 +1,33 @@
 ---
 title: 'About Next Gen'
-about_text: "Next Gen Creators is a nonprofit organization started in 2015 to help provide a platform from aspiring and existing developers in the Caribbean to showcase their skills and create solutions to the world’s biggest problems.  \r\n<br>\r\n<br>\r\nThe organization eventually evolved to help young entrepreneurs and techies across the Caribbean and Latin America to innovate, collaborate and learn through a series of specially curated events and programs.  \r\n<br>\r\n<br>\r\nNext Gen Creators is the organizer of Coders Of The Caribbean, Converge Summit and pitch partners for the Diamond Challenge in Jamaica."
-how_work_subtext: 'Our results are guaranteed - here are our methodologies for success:\'
-quality1: Entrepreneurship
-quality1_icon: accessibility
-quality1_description: 'Considering the limitations that exists in the Caribbean’s start-up ecosystem our organization serves as a ‘feeder’ of entrepreneurial and tech talent into the space.'
-quality2: Immersion
+about_text: "Next Gen Creators is a nonprofit organization started in 2015 to help provide a platform from aspiring and existing developers in the Caribbean to showcase their skills and create solutions to the world’s biggest problems.  \r\n<br>\r\n<br>\r\nWe have evolved to help young entrepreneurs and techies across the Caribbean to innovate, collaborate and learn through a series of specially curated events and programs.  \r\n<br>\r\n<br>\r\nNext Gen Creators is the organizer of Coders Of The Caribbean, Converge Summit and pitch partners for the Diamond Challenge in Jamaica."
+how_work_subtext: 'We are on a mission to increase digital literacy in order to further develop the tech/startup ecosystem in the region.'
+quality1: Sensitize
+quality1_icon: flash_on
+quality1_description: 'Through our school/community tours we delve into various Caribbean communities to encourage digital literacy. Every month we bring like-minded individuals together to collaborate on ideas and talk about the future of the tech economy.'
+quality2: Train
 quality2_icon: group
-quality2_description: 'Through our curated workshops, seminars, hackathons and conferences we inspire young entrepreneurs and developers to explore their skills and become full-time talents. Our team also works to introduce youth to coding.'
-quality3: Learn
+quality2_description: 'Through our curated workshops, startup summits, hackathons and coding bootcamps we inspire young entrepreneurs and developers to explore their skills and become full-time talents. Our team works to introduce youth to software development and tech-entrepreneurship.'
+quality3: 'Provide Opportunity'
 quality3_icon: settings
-quality3_description: 'We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.'
-fund_allocation_subtext: 'copy writing copy writing copy writing copy writing'
-fund_allocation_description: "Next Gen Creators is funded by generous donations from sponsors and our partners. 100% of all funds raised by the organization is used for project implementation.\r\n<br><br>\r\nIf you’d like to help our organization to inspire the next generation, Kindly consider donating to Next Gen Creators (contact our team for more info)."
-outreach_subtext: 'copy writing copy writing copy writing copy writing'
-faq_subtext: 'copy writing copy writing copy writing copy writing'
+quality3_description: 'We help our community members excel by offering access to employment through our partner companies and by providing seed grands for their startup ideas.'
+fund_allocation_subtext: 'See how we help the community!'
+fund_allocation_description: "Next Gen Creators is funded by generous donations from sponsors and our partners.\r\n<br><br>\r\nIf you’d like to help our organization to inspire the next generation, Kindly consider donating to Next Gen Creators (contact our team for more info)."
+outreach_subtext: 'Follow us on our journey!'
+faq_subtext: 'Still have some questions?'
 faq:
     -
         question: 'How can I get involved with Next Gen Creators?'
-        answer: 'It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? We don’t see them, we will never see them. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Every chance I get, I water the plants, Lion!'
+        answer: 'To donate, please shoot us an email at: info@nextgencreators.com <br><br>To volunteer, head to our volunteer form on the home page.'
     -
         question: 'How old to I have to be to participate in most Next Gen programs?'
-        answer: 'They key is to have every key, the key to open every door. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key.'
+        answer: 'Our key demographic is youth, usually in high school and college/university (ages 13 - 25)'
     -
         question: 'Is Next Gen Creators a registered nonprofit organization?'
-        answer: 'Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. They will try to close the door on you, just open it. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Hammock talk come soon.'
+        answer: 'Yes! We are registered as an NGO in Jamaica and are fiscally sponsored by a 501c(3) org. in the U.S.'
     -
         question: 'How can I contact Next Gen Creators?'
-        answer: 'Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. They will try to close the door on you, just open it. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Hammock talk come soon.'
+        answer: 'Head over to our ''Contact Us'' page or email us at: info@nextgencreators.com'
 about_img:
     user/themes/next-gen/images/about/about_header.JPG:
         name: about_header.JPG

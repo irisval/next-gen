@@ -1,21 +1,20 @@
 ---
 title: 'Get Involved'
 featured_subtext: 'We have some exciting events coming up and we''d love to meet you there!'
-other_ways_subtext: 'I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there.'
+other_ways_subtext: 'Come and play a major part in our journey'
 other_ways:
     -
         name: Volunteer
-        description: 'It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? We don’t see them, we will never see them. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Every chance I get, I water the plants, Lion!'
-        url_bottom: /next-gen/get_involved
+        description: 'If you want to become a volunteer for any of our programs, whether it be our hackathons, coding workshops, startup summits or coding bootcamps, let us know! And don''t worry, you don''t need to know how to code in order to help!'
+        url_bottom: /next-gen/get_involved/vol
     -
         name: Join
-        description: 'They key is to have every key, the key to open every door. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key.'
-        url_bottom: /next-gen/get_involved
+        description: 'Ready to join an amazing tech/startup community with people who love to build things? Come join us! '
+        url_bottom: /next-gen/community
     -
         name: Subscribe
-        description: 'Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. They will try to close the door on you, just open it. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Hammock talk come soon.'
-        url_bottom: /next-gen/get_involved
-other_ways_link: /next-gen/get_involved
+        description: 'Keep up to date with everything that we''re doing. Subscribe to our mailing list to get the latest news on events, community shout outs and things to look out for in the region! '
+other_ways_link: next-gen/get_involved/sponsor
 form:
     name: email-form
     fields:

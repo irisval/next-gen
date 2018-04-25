@@ -1,5 +1,5 @@
 ---
-title: 'Events List'
+title: 'Upcoming Events'
 content:
     items:
         '@taxonomy':
