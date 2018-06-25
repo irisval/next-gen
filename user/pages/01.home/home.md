@@ -47,7 +47,7 @@ join_community_img:
         type: image/jpeg
         size: 7667609
         path: user/themes/next-gen/images/home/home_join.JPG
-title: Home
+title: Next Gen Creators
 join-community-caption: 'aYou see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Eliptical talk. Fan luv. Find peace, life is like a water fall, you’ve gotta flow.'
 contact-email: ainfo@nextgencreators.com
 contact-number: a876-451-3421
