@@ -19,7 +19,6 @@ var jq321 = $.noConflict(true);
     setInterval(cycle, 1000);
     
     function cycle() {
-      console.log(counter);
       $("#madeby-icon").removeClass(icons[counter]);
       counter = Math.floor(Math.random() * icons.length);
       $("#madeby-icon").addClass(icons[counter]);    
