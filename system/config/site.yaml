@@ -1,9 +1,9 @@
-title: Grav                                 # Name of the site
+title: Next Gen Creators                                 # Name of the site
 default_lang: en                            # Default language for site (potentially used by theme)
 
 author:
-  name: John Appleseed                      # Default author name
-  email: 'john@email.com'                   # Default author email
+  name: Elixir Labs                      # Default author name
+  email: 'elixirlabsorg@gmail.com'                   # Default author email
 
 taxonomies: [category,tag]                  # Arbitrary list of taxonomy types
 
