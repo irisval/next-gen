@@ -62,7 +62,7 @@
         "compile": [
 			"bin/grav install",
 		    "bin/gpm install admin -y",
-		    "bin/gpm install awesome-theme-name-here -y"
+		    "bin/gpm install next-gen -y"
 		]
     },
     "extra": {
