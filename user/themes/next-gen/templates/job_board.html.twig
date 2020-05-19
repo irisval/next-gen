@@ -1,0 +1,39 @@
+{% set jobs = page.collection({'items':'@self.children', 'pagination': true, 'limit': 10, 'order': {'by': 'default', 'dir': 'asc'}}) %}
+{% embed 'partials/base.html.twig' %}
+{% block content %}
+
+<main>
+<div class="container page-container">
+  <h3 class="page-header white-text">{{ page.title }}</h3>
+  <div class="row white-text source-sans-pro">
+      <div class="col l8 m12">
+    <p class="white-text source-sans-pro">{{ page.content }}</p>
+      </div>
+    </div>
+  <div class="container">
+  <div class="section">
+  </div>
+  <div class="section">
+{% for job in jobs %}
+    <div class="col s12 m7 spacing">
+        <div class="job-card">
+           <div class="item card-left">
+              <img class="job-loc-img" src="{{ base_url }}/{{ job.header.job_img|first.path }}" >
+           </div>
+           <div class="item card-right">
+              <h3 class="header-mini">{{ job.header.job_title }}</h3>
+              <h3 class="header-sub source-sans-pro">{{ job.header.location }}</h3>
+              <!-- <h3 class="header-loc">{{ job.header.location }}</h3> -->
+              <div class="job-desc source-sans-pro">{{ job.header.job_summary }}</div>
+              <a class="waves-effect waves-light light-blue-text accent-2  hero-learn" href="{{ job.url }}"><i class="material-icons r-program right">add</i>learn more</a>
+           </div>
+        </div>
+     </div>
+      {% endfor %}
+  </div>
+</div>
+</div>
+</main>
+{% endblock %}
+{% endembed %}
+

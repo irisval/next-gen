@@ -1,0 +1,82 @@
+title: Team
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        gallery:
+          type: tab
+          title: Edit Page Content
+
+          fields:
+            header.title:
+              type: text
+              label: Page Title
+              default: The Team
+              validate:
+                required: true
+
+            header.subtext:
+              type: text
+              label: Subtext
+              default: The faces behind it all
+              validate:
+                required: true
+
+            header.team_members:
+              type: list
+              style: vertical
+              label: Add Team Member
+              fields:
+                .picture:
+                  type: file 
+                  label: About Image
+                  destination: 'user/themes/next-gen/images/team'
+                  multiple: false
+                  accept:
+                    - image/*
+                .name:
+                  type: text
+                  label: Name
+                .position:
+                  type: text
+                  label: Person's Position
+                # .facebook:
+                #   type: text
+                #   label: Facebook Link
+                # .twitter:
+                #   type: text
+                #   label: Twitter Link
+                # .linkedin:
+                #   type: text
+                #   label: LinkedIn Link
+                .icons:
+                  type: list
+                  style: vertical
+                  label: Add Icon
+                  fields:
+                    .link: 
+                      type: text
+                      label: Icon Link
+                    .symbol: 
+                      type: text
+                      label: Icon Symbol
+                .bio:
+                  type: text
+                  label: Bio
+                .mantra:
+                  type: text
+                  label: Mantra
+                .cofounder:
+                  type: toggle
+                  label: Cofounder (Show on Communtity Page)
+                  highlight: 0
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  validate:
+                    type: bool
+
+               

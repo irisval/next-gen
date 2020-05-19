@@ -1,0 +1,32 @@
+{% set projects = page.collection({'items':'@self.children', 'pagination': true, 'limit': 10, 'order': {'by': 'default', 'dir': 'asc'}}) %}
+{% embed 'partials/base.html.twig' %}
+{% block content %}
+<main class="programs">
+  <div class="container page-container">
+  <div class="section">
+  <h3 class="page-header white-text">{{ page.title }}</h3>
+  <div class="row white-text source-sans-pro">
+      <div class="col l8 m12">
+    <p>{{ page.content }}</p>
+      </div>
+    </div>
+    {% for proj in projects %}
+<div class="row">
+<div class="col l5 m10 push-m1 pull-m1 s12 left-img valign">
+  {% for image in proj.media.images %}
+    {{ image.html('t', 'project', 'z-depth-2 right programs-img responsive-img') }}
+  {% endfor %}
+</div>
+<div class="col l7 m10 push-m1 pull-m1 s12 inner-p-font right-text valign">
+  <div class="white-text right-text-content">
+    <h5><a class="category-list-title" href="{{ proj.url }}">{{ proj.title }}</a></h5>
+    <div class="source-sans-pro">{{ proj.content | truncate(375, true)}}. . . . . .</div>
+    <a class="waves-effect waves-light light-blue-text accent-2  hero-learn" href="{{ proj.url }}"><i class="material-icons r-program right">add</i>learn more</a>
+  </div>
+</div>
+</div>
+    {% endfor %} 
+</main>
+{% endblock %}
+{% endembed %}
+

@@ -1,0 +1,67 @@
+title: Home
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        gallery:
+          type: tab
+          title: Edit Page Content
+
+          fields:
+            header.title:
+              type: text
+              label: Page Title
+              default: Community
+              validate:
+                required: true
+
+            header.about_text:
+              type: editor
+              label: Community Text
+              default: Hello there! We are a non-profit organization providing a platform for youth to explore their skills as entrepreneurs and innovators through events and projects that provides opportunites for real-life application. We empower the Caribbean and Latin America regions' young developers, designers, and tech-entrepreneurs.
+              validate:
+                required: true
+
+            header.join_subtext:
+              type: text
+              label: Join Community Subtext
+              default: Become a part of our community and gain awesome benefits!
+              validate:
+                required: true
+
+            header.benefits:
+              type: list
+              style: vertical
+              label: Benefits
+              fields:
+                .benefit:
+                  type: text
+                  label: Benefit
+
+            header.cofounders_subtext:
+              type: text
+              label: Cofounders Subtext
+              default: copy writing copy writing copy writing copy writing
+              validate:
+                required: true
+
+            header.custom_file:
+              type: file
+              label: Slideshow Photos
+              destination: 'self@'
+              multiple: true
+              limit: 0
+              filesize: 10
+              accept:
+                - image/*
+
+            header.job_board_subtext:
+              type: text
+              label: Job Board Subtext
+              default: copy writing copy writing copy writing copy writing
+              validate:
+                required: true
+               

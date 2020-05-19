@@ -1,0 +1,140 @@
+{% set programs = page.collection({'items':{'@page.children': '/about/programs'}, 'pagination': true, 'limit': 10, 'order': {'by': 'default', 'dir': 'asc'}}) %}
+{% extends 'partials/home_base.html.twig' %}
+{% block content %}
+<script>
+  // Center all the things!
+  
+</script>
+<div class="hero">
+  <div class="nav z-depth-1">
+     <a href="{{ base_url }}"><img class="logo" src="{{ url('theme://images/logo.png') }}"></a>
+     {% include 'partials/navigation.html.twig' %} 
+   </div>
+   <div class="row left-align cont">
+      <div class="section"></div>
+      <div class="section"></div>
+      <div class="section"></div>
+      <div class="section"></div>
+      <div class="col l5 push-l1 m6 push-m1 s10 push-s1">
+         <h2 id="slogan">{{ page.header.slogan }}</h2>
+      </div>
+   </div>
+   <div class="row left-align">
+      <div class="col l6 push-l1 m6 push-m1 s10 push-s1">
+         <h5 id="hero-sub">{{ page.header.slogan_subtext }}</h5>
+         <a href="about/" class="waves-effect waves-light btn">learn more</a>
+      </div>
+   </div>
+</div>
+<main>
+   <div class="container">
+      <div class="section home-involved">
+         <h4 class="header center white-text">Get Involved</h4>
+         <div class="col center-align s12 m7 spacing">
+            <p class="white-text zero-line-height">{{ page.header.get_involved.subtext }}</p>
+         </div>
+         <!-- /// -->
+         <ul class="photo-grid">
+            <div class="row center">
+               <div class="col s4">
+                  <li class="center-align">
+                     <div class="fig" style="background-image: url('{{ page.header.circle1_img|first.path }}')">
+                        <div class="inner-content center-align">
+                           <p class="center-align">{{ page.header.circle1_hover_text }}</p>
+                           <a href="{{ page.header.circle1_hover_link }}"><i class="left-align rarrow material-icons">keyboard_arrow_right</i></a>
+                        </div>
+                     </div>
+                  </li>
+               </div>
+               <div class="col s4">
+                  <li class="center-align">
+                     <div class="fig" style="background-image: url('{{ page.header.circle2_img|first.path }}')">
+                        <div class="inner-content center-align">
+                           <p class="center-align">{{ page.header.circle2_hover_text }}</p>
+                           <a href="{{ page.header.circle2_hover_link }}"><i class="left-align rarrow material-icons">keyboard_arrow_right</i></a>
+                        </div>
+                     </div>
+                  </li>
+               </div>
+               <div class="col s4">
+                  <li class="center-align">
+                     <div class="fig" style="background-image: url('{{ page.header.circle3_img|first.path }}')">
+                        <div class="inner-content center-align">
+                           <p class="center-align">{{ page.header.circle3_hover_text }}</p>
+                           <a href="{{ page.header.circle3_hover_link }}"><i class="left-align rarrow material-icons">keyboard_arrow_right</i></a>
+                        </div>
+                     </div>
+                  </li>
+               </div>
+            </div>
+         </ul>
+         <div class="row center">
+            <div class="col s4 center">
+               <h5 class="white-text home-sub-mini">{{ page.header.circle1_caption }}</h5>
+            </div>
+            <div class="col s4 center">
+               <h5 class="white-text home-sub-mini">{{ page.header.circle2_caption }}</h5>
+            </div>
+            <div class="col s4 center">
+               <h5 class="white-text home-sub-mini">{{ page.header.circle3_caption }}</h5>
+            </div>
+         </div>
+      </div>
+      <div class="section home-join">
+         <h4 class="header center white-text">Join the Community</h4>
+         <div class="col center-align s12 m7 spacing">
+            <p class="white-text zero-line-height">{{ page.header.join_community.subtext }}</p>
+         </div>
+         <div class="row">
+            <div class="hmph col l8 push-l2 pull-l2 m10 push-m1 pull-m1 s12">
+               <img class="responsive-img z-depth-3" src="{{ page.header.join_community_img|first.path }}">             
+            </div>
+         </div>
+         <div class="row">
+            <div class="col l8 push-l2 pull-l2 m10 push-m1 pull-m1 s12 home-below-text center left-align">
+               <p class="white-text source-sans-pro">{{ page.header.join_community_caption }}</p>
+               <a class="waves-effect waves-light center btn" href="community/">join us</a>
+            </div>
+         </div>
+      </div>
+      <div class="section home-programs">
+         <h4 class="header center white-text">Our Programs</h4>
+         <div class="col center-align s12 m7 spacing">
+            <p class="white-text zero-line-height">{{ page.header.programs.subtext }}</p>
+         </div>
+         {% include 'partials/program_list.html.twig' %} 
+      </div>
+      <div class="section home-contact">
+         <h4 class="header center white-text">Contact Us</h4>
+         <div class="col center-align s12 m7 spacing">
+            <p class="white-text zero-line-height">{{ page.header.contact_us.subtext }}</p>
+         </div>
+         {# <p class="top-align-p white-text">Email: {{ page.header.contact_email }}</p>
+         <p class="white-text">Cell-Phone: {{ page.header.contact_number }}</p> #}
+         <div class="row center">
+            <div class="col s12 l8 push-l2 pull-l2">
+               {% include 'forms/form.html.twig' %}
+            </div>
+         </div>
+      </div>
+      <div class="section home-sponsors">
+         <h4 class="header center white-text">Sponsors and Donors</h4>
+         <div class="col center-align s12 m7 spacing">
+            <p class="white-text zero-line-height">{{ page.header.sponsors_donors.subtext }}</p>
+         </div>
+         <div class="center row valign-wrapper">
+            {% for image in page.media.images%}
+            <div class="col s6">
+               <img class="responsive-img" src="{{ image.url }}">
+            </div>
+            {% endfor %}
+            {% for image in page.media.files %}
+            <div class="col s6">
+               <img class="responsive-img" src="{{ image.url }}">
+            </div>
+            {% endfor %}
+         </div>
+      </div>
+   </div>
+</main>
+{% endblock %}

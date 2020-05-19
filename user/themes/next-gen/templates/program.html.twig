@@ -1,0 +1,25 @@
+{% embed 'partials/base.html.twig' %}
+{% block content %}
+
+<div class="indiv-img-cover-wrapper">
+{% set image = page.media.images|first %}
+      {% if image != null %}
+          {{ image.cropZoom(960,320).html('','','indiv-img-cover') }}
+      {% endif %}
+</div>
+
+<div class="container">
+<div class="container center-align img-header">
+<div class="section">
+      <h4 class="header white-text" id="event-title" style="padding-bottom: 0.5em;">{{ page.title }}</h4>
+      <div class="row">
+	<div class="project-descr white-text source-sans-pro">
+	{{ page.content }}
+	</div>
+	</div>
+	<a href="../programs" class="waves-effect waves-light btn">go back</a>
+</div>
+</div>
+</div>
+{% endblock %}
+{% endembed %}

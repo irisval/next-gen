@@ -1,0 +1,42 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }}{% endif %}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+     <link rel="shortcut icon" type="image/x-icon" href="{{ url('theme://images/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ url('theme://images/favicon.ico') }}"/>
+    <link rel="canonical" href="{{ page.url(
+    true, true) }}" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Source+Sans+Pro:300,400,600" rel="stylesheet">
+
+    {% block stylesheets %}
+        {% do assets.addCss('https://fonts.googleapis.com/icon?family=Material+Icons') %}
+        {% do assets.addCss('theme://css/css/normalize.css') %}
+        {% do assets.addCss('theme://css/css/materialize.css') %}
+        {% do assets.addCss('theme://css/css/main.min.css') %}
+        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') %}
+    {% endblock %}
+    {{ assets.css() }}
+
+
+{% endblock head %}
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+    {% include 'partials/footer.html.twig' %}
+    {% block javascripts %}
+        {% do assets.addJs('https://code.jquery.com/jquery-3.2.1.min.js', 100) %}
+        {% do assets.addJs('theme://js/materialize.js', 99) %}
+        {% do assets.addJs('theme://js/scripts.js', 98) %}
+    {% endblock %}
+    {{ assets.js() }}
+  </body>
+</html>

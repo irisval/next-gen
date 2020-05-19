@@ -1,0 +1,44 @@
+title: Text
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        job:
+          type: tab
+          title: Job Details
+
+          fields:
+            header.job_title:
+              type: text
+              label: Job Title
+              default: Software Engineer
+              validate: 
+                required: true
+
+            header.who_you_are:
+              type: text
+              label: Who You Are
+              default: Willing to stackoverflow for hours on end.
+              validate: 
+                required: true
+
+            header.required:
+              type: text
+              label: Required
+              default: Prior experience in faking javascript knowledge.
+              validate: 
+                required: true
+
+            header.location:
+              type: text
+              label: Job Location
+              default: Caribbean
+              validate:
+                required: true

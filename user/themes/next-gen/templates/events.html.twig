@@ -1,0 +1,67 @@
+{% embed 'partials/base.html.twig' %}
+{# get events by taxonomy #}
+{% set events =
+page.collection({
+'items': {
+'@taxonomy': {
+'type': 'event',
+}
+},
+'dateRange': {
+'start': datetools.today|date('m/d/Y')
+},
+'order': {
+'by': 'date',
+'dir': 'asc'
+},
+'pagination': true
+})
+%}
+{% block content %}
+<div class="container page-container">
+   <div class="events-container">
+      <h3 class="page-header white-text">{{ page.title }}</h3>
+      <div class="section">
+      </div>
+      <div class="row white-text source-sans-pro">
+      <div class="col l8 m12">
+    <p class="white-text source-sans-pro">{{ page.content }}</p>
+      </div>
+    </div>
+       <section class="events-listing">
+      {% for event in events %}
+
+      <div class="row">
+         <div class="col l10 push-l1 pull-l1">
+            <div class="calendar-event-card white-text card">
+               <div class="card-content">
+                  <div class="row valign-wrapper">
+                     <div class="col l3">
+                         <span class="center card-upper card-title">{{ event.header.event.start|date("M") }}</span>
+                        <h1 class="center date">{{ event.header.event.start|date("d") }}</h1>
+                        <span class="center card-upper card-title">{{ event.header.event.start|date("l") }}</span>
+                        <a href="{{ event.url }}" class="center card-lower card-title">{{ event.title }}</a>
+                     </div>
+                     <div class="col l9">
+                         <div class="event-desc source-sans-pro">
+                           <div class="white-text event-summary">
+                              {{ event.summary(250) }}
+                           </div>
+                        </div>
+                        <a style="margin-top: 5px;" class="waves-effect waves-light light-blue-text accent-2 hero-learn right-align" href="{{ event.url }}"><i class="material-icons r-program right">add</i>learn more</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+       {% endfor %}
+       <section>
+   </div>
+</div>
+{# Render the pagination list #}
+{% if config.plugins.pagination.enabled and events.params.pagination %}
+{% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+{% endif %}
+{% endblock %}
+{% endembed %}

@@ -1,0 +1,197 @@
+title: Home
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        gallery:
+          type: tab
+          title: Edit Page Content
+
+          fields:
+            header.slogan:
+              type: text
+              label: Slogan
+              default: Inspiring the Next Generation
+              validate:
+                required: true
+
+            header.slogan_subtext:
+              type: text
+              label: Slogan Subtext
+              default: Helping Youth in the Caribbean explore their passions as techies and entrepreneurs. 
+              validate:
+                required: true
+
+            header.get_involved.subtext:
+              type: text
+              label: Get Involved Subtext
+              default: copywritingcopywritingcopywritingcopywriting
+              validate:
+                required: true
+
+            header.circle1_img:
+              type: file 
+              label: Circle 1 Image
+              destination: 'user/themes/next-gen/images/home'
+              multiple: false
+              accept:
+                - image/*
+
+            header.circle1_caption:
+              type: text
+              label: Circle 1 Caption
+              default: Volunteer With Us
+              validate: 
+                required: true
+
+            header.circle1_hover_text:
+              type: text
+              label: Circle 1 Hover Text
+              default: Want to Volunteer?
+              validate:
+                required: true
+
+            header.circle1_hover_link:
+              type: text
+              label: Circle 1 Hover Link
+              default: '/'
+              validate:
+                required: true
+
+            header.circle2_img:
+              type: file 
+              label: Circle 2 Image
+              destination: 'user/themes/next-gen/images/home'
+              preview_images: true
+              multiple: false
+              accept:
+                - image/*
+
+            header.circle2_caption:
+              type: text
+              label: Circle 2 Caption
+              default: Sponsor us
+              validate: 
+                required: true
+
+            header.circle2_hover_text:
+              type: text
+              label: Circle 2 Hover Text
+              default: Want to Sponsor?
+              validate:
+                required: true
+
+            header.circle2_hover_link:
+              type: text
+              label: Circle 2 Hover Link
+              default: '/'
+              validate:
+                required: true
+
+            header.circle3_img:
+              type: file 
+              label: Circle 3 Image
+              destination: 'user/themes/next-gen/images/home'
+              preview_images: true
+              multiple: false
+              accept:
+                - image/*
+
+            header.circle3_caption:
+              type: text
+              label: Circle 3 Caption
+              default: See our Events
+              validate: 
+                required: true
+
+            header.circle3_hover_text:
+              type: text
+              label: Circle 3 Hover Text
+              default: Come to an Event!
+              validate:
+                required: true
+
+            header.circle3_hover_link:
+              type: text
+              label: Circle 3 Hover Link
+              default: '/'
+              validate:
+                required: true
+
+            header.join_community.subtext:
+              type: text
+              label: Join Community Subtext
+              default: copywritingcopywritingcopywritingcopywriting
+              validate:
+                required: true
+
+            header.join_community_img:
+              type: file
+              label: Join Community Image
+              destination: 'user/themes/next-gen/images/home'
+              preview_images: true
+              multiple: false
+              accept:
+                - image/*
+
+            header.join_community_caption:
+              type: text
+              label: Join Community Caption
+              default: You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Eliptical talk. Fan luv. Find peace, life is like a water fall, you’ve gotta flow.
+              validate:
+                required: true
+
+            header.programs.subtext:
+              type: text
+              label: Programs Subtext
+              default: copywritingcopywritingcopywritingcopywriting
+              validate:
+                required: true
+
+            header.contact_us.subtext:
+              type: text
+              label: Contact Us Subtext
+              default: copywritingcopywritingcopywritingcopywriting
+              validate:
+                required: true
+
+            header.contact_email:
+              type: text
+              label: Contact Email
+              default: info@nextgencreators.com
+              validate:
+                required: true
+
+            header.contact_number:
+              type: text
+              label: Contact Number
+              default: 876-451-3421
+              validate:
+                required: true
+
+            header.sponsors_donors.subtext:
+              type: text
+              label: Sponsors Donors Subtext
+              default: copywritingcopywritingcopywritingcopywriting
+              validate:
+                required: true
+                
+            header.custom_file:
+              type: file
+              label: A Label
+              destination: 'self@'
+              multiple: true
+              limit: 5
+              filesize: 1
+              accept:
+                - image/*
+
+
+
+
+
+
+           

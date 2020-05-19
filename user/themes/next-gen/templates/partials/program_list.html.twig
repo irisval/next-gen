@@ -1,0 +1,32 @@
+{% for prog in programs %}
+<div class="row">
+<div class="col l5 m10 push-m1 pull-m1 s12 left-img valign">
+  {% for image in prog.media.images %}
+    {{ image.html('t', 'programs', 'z-depth-2 programs-img responsive-img') }}
+  {% endfor %}
+</div>
+<div class="col l7 m10 push-m1 pull-m1 s12 inner-p-font right-text valign">
+  <div class="white-text right-text-content">
+    <h5><a class="category-list-title" href="{{ prog.url }}">{{ prog.title }}</a></h5>
+    <div class="source-sans-pro">{{ prog.content | truncate(375, true)}}. . . . . .</div>
+    <a class="waves-effect waves-light light-blue-text accent-2  hero-learn" href="{{ prog.url }}"><i class="material-icons r-program right">add</i>learn more</a>
+  </div>
+</div>
+</div>
+{% endfor %}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

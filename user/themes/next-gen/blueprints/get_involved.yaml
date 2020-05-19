@@ -1,0 +1,56 @@
+title: Get Involved
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        gallery:
+          type: tab
+          title: Edit Page Content
+
+          fields:
+            header.title:
+              type: text
+              label: Page Title
+              default: Get Involved
+              validate:
+                required: true
+
+            header.featured_subtext:
+              type: text
+              label: Featured Event Subtext
+              default: We have some exciting events coming up and we'd love to meet you there!
+              validate:
+                required: true
+
+            header.other_ways_subtext:
+              type: text
+              label: Get Involved Subtext
+              default: I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there.
+              validate:
+                required: true
+
+            header.other_ways:
+              type: list
+              style: vertical
+              label: Other Way to Get Involved
+              fields:
+                .name:
+                  type: text
+                  label: Other Way to Get Involved
+                .description:
+                  type: editor
+                  label: Other Way Description
+                .url_bottom:
+                  type: text
+                  label: URL to Display on Bottom (Optional)
+
+            header.other_ways_link:
+              type: text
+              label: Other Ways to Get Involved Section Link
+              default: /next-gen/get-involved
+              validate:
+                required: true
+
