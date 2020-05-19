@@ -28,7 +28,7 @@
 
 .dashboard-notifications-container, .plugins-notifications-container, .themes-notifications-container {
 
-    margin: 2rem 0 2rem 0;
+    margin-bottom: 1rem;
 
     .raw {
         position: relative;
@@ -72,6 +72,8 @@
 
         .top-notifications-container {
 
+            margin-bottom: 1rem;
+
             .alert {
                 a {
                     cursor: pointer;
@@ -96,10 +98,12 @@
         }
         .badge.alert {
             margin: 0;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
             margin-right: 5px;
             border-radius: 4px;
+            vertical-align: middle;
+            line-height: 1.7;
 
             i {
                 margin-right: 3px;

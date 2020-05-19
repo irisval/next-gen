@@ -47,6 +47,23 @@ form:
               type: datetime
               label: Until
               help: How long should this event repeat? (3 months automatically if Repeat or Frequency are set)
+            header.event.exceptions-section:
+              type: section
+              title: Exceptions
+              underline: true
+            header.event.exceptions:
+              type: list
+              style: vertical
+              name: exceptions
+              label: Enter dates this repeating/reoccuring event will not meet.
+              fields:
+                .date:
+                  type: date
+                  label: Date
+            header.event.facebook_link:
+              type: text
+              label: Facebook Link
+              help: Paste link to Facebook event here
             header.event.lct:
               type: section
               title: Location
@@ -60,5 +77,9 @@ form:
               label: Coordinates
               placeholder: Latitude, Longitude
               help: These are automatically generated from the location field.
-
-
+            header.event.city:
+              type: hidden
+            header.event.zip:
+              type: hidden
+            header.event.country:
+              type: hidden

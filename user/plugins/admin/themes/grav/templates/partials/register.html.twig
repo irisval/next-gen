@@ -1,11 +1,10 @@
 {% extends 'partials/base.html.twig' %}
 {% set scope = scope ?: 'data.' %}
 
-{% block page %}
+{% block body %}
+<body id="admin-login-wrapper">
     <section id="admin-login" class="default-glow-shadow {{ classes }}">
-        <h1>
-            {{ title }}
-        </h1>
+        {% include 'partials/login-logo.html.twig' %}
 
         {% include 'partials/messages.html.twig' %}
 
@@ -19,4 +18,5 @@
             </div>
         </form>
     </section>
+</body>
 {% endblock %}

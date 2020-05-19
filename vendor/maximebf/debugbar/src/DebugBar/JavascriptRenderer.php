@@ -70,6 +70,8 @@ class JavascriptRenderer
 
     protected $ajaxHandlerClass = 'PhpDebugBar.AjaxHandler';
 
+    protected $ajaxHandlerBindToFetch = false;
+
     protected $ajaxHandlerBindToJquery = true;
 
     protected $ajaxHandlerBindToXHR = false;
@@ -478,6 +480,27 @@ class JavascriptRenderer
     }
 
     /**
+     * Sets whether to call bindToFetch() on the ajax handler
+     *
+     * @param boolean $bind
+     */
+    public function setBindAjaxHandlerToFetch($bind = true)
+    {
+        $this->ajaxHandlerBindToFetch = $bind;
+        return $this;
+    }
+
+    /**
+     * Checks whether bindToFetch() will be called on the ajax handler
+     *
+     * @return boolean
+     */
+    public function isAjaxHandlerBoundToFetch()
+    {
+        return $this->ajaxHandlerBindToFetch;
+    }
+
+    /**
      * Sets whether to call bindToJquery() on the ajax handler
      *
      * @param boolean $bind
@@ -767,7 +790,7 @@ class JavascriptRenderer
      *    elements); it must be embedded within the <head> element
      *
      * @param string $type Optionally return only 'css', 'js', or 'inline_head' collection
-     * @return array or \Assetic\Asset\AssetCollection
+     * @return array|\Assetic\Asset\AssetCollection
      */
     public function getAsseticCollection($type = null)
     {
@@ -1022,6 +1045,9 @@ class JavascriptRenderer
                 $this->variableName,
                 $this->ajaxHandlerAutoShow ? 'true' : 'false'
             );
+            if ($this->ajaxHandlerBindToFetch) {
+                $js .= sprintf("%s.ajaxHandler.bindToFetch();\n", $this->variableName);
+            }
             if ($this->ajaxHandlerBindToXHR) {
                 $js .= sprintf("%s.ajaxHandler.bindToXHR();\n", $this->variableName);
             } elseif ($this->ajaxHandlerBindToJquery) {

@@ -4,12 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitf3438a4bfc092aad40a104edf0a3eb02
+class ComposerStaticInitda370287ab6d5b8a28188afe08f659c5
 {
     public static $prefixLengthsPsr4 = array (
-        'R' => 
+        'Z' => 
         array (
-            'RobThree\\Auth\\' => 14,
+            'ZendXml\\' => 8,
         ),
         'C' => 
         array (
@@ -18,9 +18,9 @@ class ComposerStaticInitf3438a4bfc092aad40a104edf0a3eb02
     );
 
     public static $prefixDirsPsr4 = array (
-        'RobThree\\Auth\\' => 
+        'ZendXml\\' => 
         array (
-            0 => __DIR__ . '/..' . '/robthree/twofactorauth/lib',
+            0 => __DIR__ . '/..' . '/zendframework/zendxml/src',
         ),
         'Composer\\Semver\\' => 
         array (
@@ -29,35 +29,34 @@ class ComposerStaticInitf3438a4bfc092aad40a104edf0a3eb02
     );
 
     public static $prefixesPsr0 = array (
-        'Z' => 
-        array (
-            'ZendXml\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/zendframework/zendxml/library',
-            ),
-        ),
         'P' => 
         array (
             'PicoFeed' => 
             array (
-                0 => __DIR__ . '/..' . '/fguillot/picofeed/lib',
+                0 => __DIR__ . '/..' . '/p3k/picofeed/lib',
             ),
         ),
-        'B' => 
-        array (
-            'BaconQrCode' => 
-            array (
-                0 => __DIR__ . '/..' . '/bacon/bacon-qr-code/src',
-            ),
-        ),
+    );
+
+    public static $classMap = array (
+        'Grav\\Plugin\\AdminPlugin' => __DIR__ . '/../..' . '/admin.php',
+        'Grav\\Plugin\\Admin\\Admin' => __DIR__ . '/../..' . '/classes/admin.php',
+        'Grav\\Plugin\\Admin\\AdminBaseController' => __DIR__ . '/../..' . '/classes/adminbasecontroller.php',
+        'Grav\\Plugin\\Admin\\AdminController' => __DIR__ . '/../..' . '/classes/admincontroller.php',
+        'Grav\\Plugin\\Admin\\Gpm' => __DIR__ . '/../..' . '/classes/gpm.php',
+        'Grav\\Plugin\\Admin\\Popularity' => __DIR__ . '/../..' . '/classes/popularity.php',
+        'Grav\\Plugin\\Admin\\Themes' => __DIR__ . '/../..' . '/classes/themes.php',
+        'Grav\\Plugin\\Admin\\Twig\\AdminTwigExtension' => __DIR__ . '/../..' . '/classes/Twig/AdminTwigExtension.php',
+        'Grav\\Plugin\\Admin\\Utils' => __DIR__ . '/../..' . '/classes/utils.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitf3438a4bfc092aad40a104edf0a3eb02::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitf3438a4bfc092aad40a104edf0a3eb02::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitf3438a4bfc092aad40a104edf0a3eb02::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitda370287ab6d5b8a28188afe08f659c5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitda370287ab6d5b8a28188afe08f659c5::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitda370287ab6d5b8a28188afe08f659c5::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitda370287ab6d5b8a28188afe08f659c5::$classMap;
 
         }, null, ClassLoader::class);
     }

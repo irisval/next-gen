@@ -1,3 +1,61 @@
+# v1.1.4
+## 02/16/2020
+1. [](#improved)
+    * updated dependencies
+    * some minor layout changes
+3. [](#bugfix)
+    * fixed date translation issue (https://github.com/pikim/grav-plugin-events/issues/5)
+    * fixed geocoding issue (https://github.com/pikim/grav-plugin-events/issues/4)
+    * fixed an issue with the calendar table height, table is now fully shown
+    * fixed years in changelog
+
+# v1.1.3
+## 01/15/2020
+1. [](#improved)
+    * cleaned up settings, made more dates and times formatable, removed some obsolete code
+
+# v1.1.2
+## 01/14/2020
+1. [](#improved)
+    * merged code from https://github.com/ChrisGitIt/grav-plugin-events/commit/b1296cfd066b40b55a7fe18d831732526946b0bc and https://github.com/ChrisGitIt/grav-plugin-events/commit/63cef2dc3690229651c8cf458dcc6a2af6320357
+    * merged code from https://github.com/bmrankin/grav-plugin-events/commit/ea778ebaf9dc5b81dedcbcd4fa65bc32d2adcd17
+    * added message for virtual folder usage
+    * merged fix from https://github.com/pikim/grav-plugin-events/pull/2
+3. [](#bugfix)
+    * fixed code from https://github.com/kalebheitzman/grav-plugin-events/pull/48/commits/8455f71826f74bda299486772d269468c6ed4347
+    * merged fix from https://github.com/maelanleborgne/grav-plugin-events/commit/8005044f5db0b760fbf74cbff6e4e175f09d5675
+    * fixed issue from https://discourse.getgrav.org/t/there-is-no-direct-support-at-github-for-events-plugin/10733
+    * merged fix from https://github.com/pikim/grav-plugin-events/pull/1
+    * merged fix from https://github.com/pikim/grav-plugin-events/pull/3
+
+# v1.1.1
+## 10/05/2019
+1. [](#improved)
+    * updated dependencies
+3. [](#bugfix)
+    * merged fix from https://github.com/u01jmg3/ics-parser/issues/238#issuecomment-527717558
+
+# v1.1.0
+## 08/15/2019
+1. [](#new)
+    * added ics file parsing
+    * added German translation
+    * merged some code from several pull requests and known issues
+2. [](#improved)
+    * removed unused elements from admin site and added some new
+    * revised templates and CSS
+    * updated dependencies
+    * some minor changes
+3. [](#bugfix)
+    * fixed translation of weekdays
+
+# v1.0.16
+## 12/25/2016
+1. [](#new)
+	* Added the ability to add date exceptions to events
+1. [](#improved)
+	* More intuitive calendar navigation
+
 # v1.0.15
 ## 10/02/2016
 

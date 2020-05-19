@@ -18,6 +18,10 @@ You should now have all the plugin files under
 
 	/your/site/grav/user/plugins/devtools
 	
+## Configuration
+
+By default, devtools will perform a check with the online gpm repository to ensure name-collision avoidance. If you wish to not perform this online check, change the devtools.yaml at `user/config/plugins` from `collision_check: true` to `collision_check: false`.
+
 # Usage
 
 ## Plugin Scaffolding
@@ -29,6 +33,7 @@ To create a new plugin you simply need to run: `bin/plugin devtools newplugin` a
 Enter Plugin Name: MyPlugin
 Enter Plugin Description: My New Custom Plugin
 Enter Developer Name: Johnny Rotten
+Enter GitHub ID (can be blank): pretty-vacant
 Enter Developer Email: johnny@rotten.com
 
 SUCCESS plugin myplugin -> Created Successfully
@@ -45,21 +50,24 @@ To create a new theme you simply need to run: `bin/plugin devtools new-theme` an
 Enter Theme Name: MyTheme
 Enter Theme Description: My New Custom Theme
 Enter Developer Name: Johnny Rotten
+Enter GitHub ID (can be blank): pretty-vacant
 Enter Developer Email: johnny@rotten.com
 Please choose a template type
-  [0] pure-blank
-  [1] inheritence
- > 0
+  [pure-blank ] Basic Theme using Pure.css
+  [inheritance] Inherit from another theme
+  [copy       ] Copy another theme
+ > pure-blank
 
 SUCCESS theme mytheme -> Created Successfully
 
 Path: /home/johnnyr/webroot/grav-installation/user/themes/mytheme
 ```
 
-There are **two template options**
+There are **three template creation options**
 
 1. `pure-blank` - This is a very basic blank theme that uses the [Pure CSS framework](http://purecss.io/)
-2. `inheritence` - This creates a very basic template with minimal files that inherits a base theme.  To find out more about theme inheritence, [check out the subject in more details on the Grav Learn site](https://learn.getgrav.org/themes/customization#theme-inheritance).
+2. `inheritance` - This creates a very basic template with minimal files that inherits a base theme.  To find out more about theme inheritance, [check out the subject in more details on the Grav Learn site](https://learn.getgrav.org/themes/customization#theme-inheritance).
+3. `copy` - This allows you to create a new theme based on an existing theme.  This is the simplest way to get started with a new theme by using another theme as the basis.
 
 
 

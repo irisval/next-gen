@@ -1,3 +1,81 @@
+# v1.4.0
+## 04/27/2020
+
+1. [](#new)
+    * Added new required `slug:` and `type:` attributes to blueprints
+1. [](#improved)
+    * Fixed plugin autoload
+
+# v1.3.1
+## 02/24/2020
+
+1. [](#improved)
+    * Set `validation: loose` in plugin blueprints by default
+    * Add Grav 1.6 dependency to all new plugins and themes
+
+# v1.3.0
+## 02/13/2020
+
+1. [](#improved)
+    * Added composer-based autoloader to the `new-plugin` command
+
+# v1.2.4
+## 11/06/2019
+
+1. [](#improved)
+    * Added the ability to use devtools without an online connection to GPM
+1. [](#bugfix)
+    * Regression fix for missing `theme_config` in pure-blank [#45](https://github.com/getgrav/grav-plugin-devtools/issues/45)
+
+# v1.2.3
+## 06/20/2019
+
+1. [](#improved)
+    * pure-blank: Use new 'deferred' blocks for header
+    * pure-blank: Use `home_url` variable
+    * pure-blank: Improved `README.md.twig`
+
+# v1.2.2
+## 04/21/2019
+
+1. [](#bugfix)
+    * Add Github username field to new-theme template [#39](https://github.com/getgrav/grav-plugin-devtools/pull/39)
+
+# v1.2.1
+## 08/04/2018
+
+1. [](#bugfix)
+    * Fixed incorrect folder name as a result of renaming typo of `inheritence` to `inheritance` [#32](https://github.com/getgrav/grav-plugin-devtools/issues/32)
+
+# v1.2.0
+## 07/25/2018
+
+1. [](#new)
+    * Internationalization for blank plugin component [#30](https://github.com/getgrav/grav-plugin-devtools/issues/30)
+1. [](#improved)
+    * Added a new check for reserved PHP words [#7](https://github.com/getgrav/grav-plugin-devtools/issues/7)
+    * Improved regex for valid emails [#21](https://github.com/getgrav/grav-plugin-devtools/issues/21)
+1. [](#bugfix)
+    * Fix broken renaming when doing a theme 'copy'
+    * Typos [#31](https://github.com/getgrav/grav-plugin-devtools/pull/31)
+
+# v1.1.1
+## 03/29/2018
+
+1. [](#bugfix)
+    * Fixed theme inheritance bug [#25](https://github.com/getgrav/grav-plugin-devtools/pull/25)
+
+# v1.1.0
+## 03/29/2018
+
+1. [](#new)
+    * Added new Theme `copy` option to create a new theme from another
+1. [](#improved)
+    * Stop flushing GPM cache on each call to speed things up considerably!
+1. [](#bugfix)
+    * Updated README.md [#23](https://github.com/getgrav/grav-plugin-devtools/pull/23)
+    * Properly extend Theme or Plugin [#24](https://github.com/getgrav/grav-plugin-devtools/pull/24)
+
 # v1.0.8
 ## 10/02/2017
 

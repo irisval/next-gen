@@ -20,18 +20,30 @@
 
         {% block stylesheets %}
             {% include 'partials/stylesheets.html.twig' %}
-            {{ assets.css()|raw }}
         {% endblock %}
 
         {% include 'partials/javascript-config.html.twig' %}
         {% block javascripts %}
             {% include 'partials/javascripts.html.twig' %}
-            {{ assets.js()|raw }}
         {% endblock %}
+    {% endblock %}
+
+    {% block assets deferred %}
+        {{ assets.css()|raw }}
+        {{ assets.js()|raw }}
     {% endblock %}
     </head>
     {% block body %}
-    <body class="{{ config.plugins.admin.sidebar.size == 'small' ? 'sidebar-closed' : '' }} {{ config.plugins.admin.body_classes }}">
+    <body class="ga-theme-17x {{ config.plugins.admin.sidebar.size == 'small' ? 'sidebar-closed' : '' }} {{ config.plugins.admin.body_classes }} {{ body_classes }}">
+
+    {% if not authorize(['admin.login']) %}
+        {% include 'partials/messages.html.twig' %}
+    {% else %}
+
+        {% block noscript %}
+            {% include 'partials/noscript.html.twig' %}
+        {% endblock noscript %}
+
         {% block page %}
         <div class="remodal-bg">
 
@@ -45,6 +57,7 @@
                     {% block titlebar %}{% endblock %}
                 </div>
 
+                {% block content_wrapper %}
                 <div class="content-wrapper">
                     <div class="{% if config.plugins.admin.content_padding %}content-padding{% endif %}">
                         {% block messages %}
@@ -58,18 +71,20 @@
                                 {%- block content %}{% endblock -%}
                             </div>
                             {% if config.plugins.admin.show_github_msg %}
-                            <div class="notice alert"><i class="fa fa-github"></i> <a href="https://github.com/getgrav/grav-plugin-admin/issues" target="_blank">{{ 'PLUGIN_ADMIN.ADMIN_REPORT_ISSUE'|tu }}</a></div>
+                            <div class="notice alert"><i class="fa fa-github"></i> <a href="https://github.com/getgrav/grav-plugin-admin/issues" target="_blank" rel="noopener noreferrer">{{ 'PLUGIN_ADMIN.ADMIN_REPORT_ISSUE'|tu }}</a></div>
                             {% endif %}
                             {% block content_bottom %}{% endblock %}
                         </div>
                         {% block footer %}
                         <footer id="footer">
-                             <a href="http://getgrav.org">Grav</a> v<span class="grav-version">{{ constant('GRAV_VERSION') }}</span> - Admin v{{ admin_version }} - {{ "PLUGIN_ADMIN.WAS_MADE_WITH"|tu|lower }} <i class="fa fa-heart"></i> {{ "PLUGIN_ADMIN.BY"|tu|lower }} <a href="http://www.rockettheme.com">RocketTheme</a>.
+                             {% include 'partials/footer.html.twig' %}
                         </footer>
                         {% endblock %}
                     </div>
                 </div>
+                {% endblock %}
 
+                {% block modals %}
                 <div class="remodal" data-remodal-id="generic" data-remodal-options="hashTracking: false">
                     <form>
                         <h1>{{ "PLUGIN_ADMIN.ERROR"|tu }}</h1>
@@ -104,12 +119,18 @@
                         </div>
                     </form>
                 </div>
+                {% endblock %}
 
             </main>
             <div id='overlay'></div>
         </div>
         {% endblock page %}
-    {% block bottom %}{% endblock %}
+
+    {% endif %}
+
+    {% block bottom %}
+        {{ assets.js('bottom')|raw }}
+    {% endblock %}
     </body>
     {% endblock body %}
     </html>

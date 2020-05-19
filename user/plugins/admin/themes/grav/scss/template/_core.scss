@@ -24,8 +24,9 @@ b, strong {
 }
 
 .alert {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0.5rem $padding-default;
+    position: relative;
 
     @include breakpoint(mobile-only) {
         padding: 0.5rem 1rem;
@@ -34,8 +35,8 @@ b, strong {
 
 .badge {
     display: inline-block;
-    font-size: 0.9rem;
-    font-weight: 700;
+    font-size: 0.8rem;
+    font-weight: 500;
     border-radius: 10px;
     padding: 0px 6px;
     min-width: 20px;
