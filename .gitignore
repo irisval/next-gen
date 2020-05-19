@@ -13,3 +13,5 @@ user/accounts/*
 user/config/*
 !user/config/.gitkeep
 user/themes/next-gen/css/.sass-cache/*
+.DS_Store
+/vendor/ 
